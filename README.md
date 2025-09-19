@@ -33,6 +33,7 @@ The application features a clean, modern interface with:
    ```
 
 2. **Set up virtual environment:**
+
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
