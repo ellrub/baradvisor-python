@@ -1,0 +1,200 @@
+/* BarAdvisor Bergen - Custom Styles */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.filter-panel {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-panel h5 {
+    color: #495057;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.form-select, .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.map-container {
+    position: relative;
+}
+
+#map {
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.favorite-item {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border: 1px solid #90caf9;
+    transition: all 0.2s ease-in-out;
+}
+
+.favorite-item:hover {
+    background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.favorite-item h6 {
+    color: #1976d2;
+    margin: 0;
+    font-weight: 600;
+}
+
+.favorite-item small {
+    color: #666;
+}
+
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-stars {
+    font-size: 2.5rem;
+    margin: 0 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.modal-stars:hover {
+    transform: scale(1.1);
+}
+
+.star-rating {
+    font-size: 1.2rem;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.favorites-panel {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.favorites-panel::-webkit-scrollbar {
+    width: 6px;
+}
+
+.favorites-panel::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.favorites-panel::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.favorites-panel::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Leaflet popup customization */
+.leaflet-popup-content-wrapper {
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+.leaflet-popup-content {
+    margin: 12px !important;
+    line-height: 1.4 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .filter-panel {
+        margin-bottom: 15px;
+    }
+    
+    .map-container {
+        height: 50vh;
+        min-height: 400px;
+    }
+    
+    .modal-stars {
+        font-size: 2rem;
+        margin: 0 2px;
+    }
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Alert styles */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
